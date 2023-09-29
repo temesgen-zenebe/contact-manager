@@ -6,25 +6,25 @@
 
    <div class="container">
         <div class="row row-cols-1 row-cols-md-1 g-4">
-            
+           
             <add-contact />
             
-            <contacts-list/>
+            <contact-list/>
             
-        
+             <detail-contact/>
         </div> 
     </div>
 </template>
 <script >
 import addContact from './AddContact.vue';
-import contactsList from './ContactsList.vue';
+import contactList from './ContactsList.vue';
 import detailContact from './DetailContact.vue';
 
 
 export default{
     components:{
         addContact,
-        contactsList,
+        contactList,
         detailContact,
     }
 }
@@ -38,3 +38,6 @@ export default{
     text-align: center;
 }
 </style>
+
+
+

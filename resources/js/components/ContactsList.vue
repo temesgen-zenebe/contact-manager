@@ -1,7 +1,6 @@
 <template>
     <div class="col">
-                
-                <div class="card h-100">
+        <div class="card h-100">
                     <div class="card-header d-flex justify-content-between bg-white">
                         <h6> Contacts List</h6> 
                         <button class="btn btn-sm btn-outline-info">Add</button>
@@ -17,7 +16,7 @@
                                 <th scope="col">Phon</th>
                                 <th scope="col">State</th>
                                 <th scope="col">city</th>
-                                <th scope="col">Contry</th>
+                                <th scope="col">Country</th>
                                 <th scope="col">Zip/post</th>
                                 <th scope="col">Action</th>
                             </tr>
@@ -42,7 +41,7 @@
                     <div class="card-footer">
                         <small class="text-body-secondary">Last updated 3 mins ago</small>
                     </div>
-                </div>
+        </div>       
     </div>
 </template>
 <script >
