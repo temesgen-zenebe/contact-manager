@@ -14,6 +14,22 @@
           <label for="phone" class="form-label">Phone</label>
           <input v-model="formData.phone" type="text" class="form-control" id="phone" required>
         </div>
+        <div class="mb-3">
+          <label for="country" class="form-label">Country</label>
+          <input v-model="formData.country" type="text" class="form-control" id="country" required>
+        </div>
+        <div class="mb-3">
+          <label for="city" class="form-label">City</label>
+          <input v-model="formData.city" type="text" class="form-control" id="city" required>
+        </div>
+        <div class="mb-3">
+          <label for="state" class="form-label">State</label>
+          <input v-model="formData.state" type="text" class="form-control" id="state" required>
+        </div>
+        <div class="mb-3">
+          <label for="zip" class="form-label">Zip</label>
+          <input v-model="formData.zip" type="text" class="form-control" id="zip" required>
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
@@ -28,7 +44,11 @@
         formData: {
           name: '',
           email: '',
-          phone: ''
+          phone: '',
+          country: '',
+          city: '',
+          state: '',
+          zip: ''
         }
       };
     },
@@ -47,7 +67,11 @@
         this.formData = {
           name: '',
           email: '',
-          phone: ''
+          phone: '',
+          country: '',
+          city: '',
+          state: '',
+          zip: ''
         };
       }
     }
