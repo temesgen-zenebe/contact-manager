@@ -8,6 +8,12 @@ Sure! Here's the list of completed tasks :
 - [x] Created a API for a simple app that lists basic contact information (Name, Email, Phone, Country, City, State/Region, Zip/Postal Code, etc.).
 - [x] Implemented  API  functionality to allow creating, editing, and deleting contact info (demonstrated using  insomnia frontend tester tool )
 - [ ] eg. this are API end points Contact Created Request: (http://localhost:8000/api/v1/contacts), contact index Request:(http://127.0.0.1:8000/api/v1/contacts)
+  (GET|HEAD       http://localhost:8000/api/v1/contacts ........................................... contacts.index › Api\V1\ContactController@index 
+  POST            http://localhost:8000/api/v1/contacts ........................................... contacts.store › Api\V1\ContactController@store 
+  GET|HEAD        http://localhost:8000/api/v1/contacts/{contact} ................................... contacts.show › Api\V1\ContactController@show 
+  PUT|PATCH       http://localhost:8000/api/v1/contacts/{contact} ............................... contacts.update › Api\V1\ContactController@update 
+  DELETE          http://localhost:8000/api/v1/contacts/{contact} ............................. contacts.destroy › Api\V1\ContactController@destroy )
+ 
 - [x] Created a migration to create a contacts table.
 - [x] Implemented soft deletes for contacts.
 - [x] Utilized form requests for validation. Alling rules using form request 
