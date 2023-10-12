@@ -6,48 +6,40 @@
   
    <div class="container">
     <!-- Button trigger modal -->
-        <button type="button" class="btn btn-sm btn-outline-primary text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Add Contact
-        </button>
-        <div class="row row-cols-1 row-cols-md-1 g-4">
-           
-            <contact-list/>
-            
-             <detail-contact/>
+        
+        <div class="row row-cols-1 row-cols-md-1 g-4 d-flex justify-content-between">
+            <!--contact list components -->
+            <contact-list />
+
         </div> 
     </div>
  
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <add-contact />
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-       
-      </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Contact</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <add-contact />
+        </div>
+        
+        </div>
     </div>
-  </div>
-</div>
+    </div>
 </template>
 <script >
 import addContact from './AddContact.vue';
 import contactList from './ContactsList.vue';
-import detailContact from './DetailContact.vue';
+
 
 
 export default{
     components:{
         addContact,
-        contactList,
-        detailContact,
+        contactList, 
     }
 }
 </script>

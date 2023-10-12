@@ -1,6 +1,6 @@
 <template>
     <div class="add-contact">
-      <h5>Add New Contact</h5>
+ 
       <form @submit.prevent="handleSubmit">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
@@ -28,7 +28,7 @@
         </div>
         <div class="mb-3">
           <label for="zip" class="form-label">Zip</label>
-          <input v-model="formData.zip" type="text" class="form-control" id="zip" required>
+          <input v-model="formData.zip" type="text" class="form-control" id="zip"  autocomplete="off" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
@@ -58,6 +58,8 @@
           .then(response => {
             console.log('Contact added:', response.data);
             this.resetForm();
+            $('#exampleModal').modal('hide'); // Hide the modal after deletion
+            window.location.reload(); // Reload the page after success
           })
           .catch(error => {
             console.error('Error adding contact:', error);
@@ -73,7 +75,8 @@
           state: '',
           zip: ''
         };
-      }
+      },
+      
     }
   }
   </script>

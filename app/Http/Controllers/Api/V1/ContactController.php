@@ -13,8 +13,9 @@ class ContactController extends Controller
 {
     public function index()
     {
-        return ContactResource::collection(Contact::all()); 
-        // return ContactResource::collection(Contact::paginate(1)); 
+        // return ContactResource::collection(Contact::all()); 
+        return ContactResource::collection(Contact::paginate(10)); 
+        
     }
 
     //Display the specified resource.  
@@ -27,6 +28,7 @@ class ContactController extends Controller
     {
         Contact::create($request->validated());
         return response()->json("Contact Created");
+       
     }
 
 
